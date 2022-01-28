@@ -1,0 +1,113 @@
+@font-face {
+	font-family: 'JetBrains Mono';
+	src: url(../assets/fonts/fonts/webfonts/JetBrainsMono-Regular.woff2);
+}
+
+html {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+body {
+	font-family: 'JetBrains Mono';
+	font-size: 1.125rem;
+
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+
+	height: 100vh;
+	width: 100%;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+
+	gap: 20px;
+
+	background-color: #18181b;
+}
+.containerInput {
+	max-width: 480px;
+}
+
+.containerInput span {
+	color: #fff;
+}
+
+.slider {
+	-webkit-appearance: none;
+	width: 100%;
+	border-radius: 5px;
+	padding: 0.1rem 0;
+	background-color: #dfdfdf;
+	height: 18px;
+	outline: none;
+}
+
+#button {
+	font-family: inherit;
+	font-size: 1.125rem;
+	background-color: #3eb72b;
+	color: #fff;
+	border: 0;
+	border-radius: 5px;
+	height: 40px;
+	width: 100%;
+	cursor: pointer;
+}
+
+.containerPassword {
+	max-width: 480px;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+.title {
+	color: #fff;
+	font-size: 2rem;
+}
+
+.password {
+	background-color: rgba(0, 0, 0, 0.4);
+	color: #fff;
+	border-radius: 4px;
+	height: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 1px solid #313131;
+	width: 100%;
+	cursor: pointer;
+	transition: transform 0.5s;
+}
+
+.password:hover {
+	transform: scale(1.05);
+}
+
+.tooltip {
+	color: #fff;
+	background-color: rgb(15, 15, 15);
+	position: relative;
+	top: 20px;
+	padding: 6px 8px;
+
+	font-size: 1rem;
+	border-radius: 6px;
+	opacity: 0;
+	visibility: hidden;
+
+	transition: all 0.5s ease-in-out;
+}
+
+.containerPassword:hover .tooltip {
+	opacity: 1;
+	visibility: visible;
+}
+
+.hide {
+	display: none;
+}

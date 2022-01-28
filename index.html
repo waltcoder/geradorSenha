@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="utf-8" />
+		<title>Gerador de Senha</title>
+		<meta name="description" content="" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<meta property="og:title" content="" />
+		<meta property="og:type" content="" />
+		<meta property="og:url" content="" />
+		<meta property="og:image" content="" />
+
+		<!-- <link rel="icon" href="/favicon.ico" sizes="any" />
+		<link rel="icon" href="/icon.svg" type="image/svg+xml" />
+		<link rel="apple-touch-icon" href="icon.png" /> -->
+
+		<link rel="stylesheet" href="css/style.css" />
+
+		<link rel="manifest" href="site.webmanifest" />
+		<meta name="theme-color" content="#fafafa" />
+	</head>
+
+	<body>
+		<main class="containerInput">
+			<span>
+				Tamanho
+				<strong id="valor"></strong>
+				caracteress
+			</span>
+			<input type="range" class="slider" id="slider" min="5" max="40" value="25" />
+			<button id="button" class="buttonCta" onclick="generatePassword()">Gerar senha</button>
+		</main>
+		<div id="containerPassword" class="containerPassword hide">
+			<span class="title">Sua senha Gerada foi:</span>
+			<span id="password" onclick="copyPassword()" class="password">sçfdjljççlçljlçjlj</span>
+			<span class="tooltip">Clique na senha para copiar</span>
+		</div>
+		<script src="js/app.js"></script>
+	</body>
+</html>
